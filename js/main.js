@@ -43,6 +43,54 @@ $( document ).ready(function() {
         }
     });
 
+    $("#xcontainer1").hide();
+    $("#xcontainer2").hide();
+    $("#xcontainer3").hide();
+    $("#xcontainer4").hide();
+
+    $("#xlink1").click(function () {
+        if ($("#xcontainer2").is(":visible") || $("#xcontainer3").is(":visible")
+            || $("#xcontainer4").is(":visible") || $("#xcontainer").is(":visible")  ){
+            $("#xcontainer").hide();
+            $("#xcontainer3").hide();
+            $("#xcontainer2").hide();
+            $("#xcontainer1").show();
+            $("#xcontainer4").hide();
+        };
+    });
+    
+    $("#xlink2").click(function () {
+        if ($("#xcontainer1").is(":visible") || $("#xcontainer3").is(":visible")
+            || $("#xcontainer4").is(":visible") || $("#xcontainer").is(":visible") ){
+            $("#xcontainer2").show();
+            $("#xcontainer1").hide();
+            $("#xcontainer3").hide();
+            $("#xcontainer4").hide();
+            $("#xcontainer").hide();
+        }
+    });
+
+    $("#xlink3").click(function () {
+        if ($("#xcontainer1").is(":visible") || $("#xcontainer2").is(":visible")
+            || $("#xcontainer4").is(":visible") || $("#xcontainer").is(":visible") ){
+            $("#xcontainer3").show();
+            $("#xcontainer2").hide();
+            $("#xcontainer1").hide();
+            $("#xcontainer4").hide();
+            $("#xcontainer").hide();
+        }
+    });
+
+    $("#xlink4").click(function () {
+        if ($("#xcontainer1").is(":visible") || $("#xcontainer2").is(":visible")
+            || $("#xcontainer3").is(":visible") || $("#xcontainer").is(":visible") ){
+            $("#xcontainer4").show();
+            $("#xcontainer2").hide();
+            $("#xcontainer1").hide();
+            $("#xcontainer3").hide();
+            $("#xcontainer").hide();
+        }
+    });
 
     $("a[href='#top']").click(function(){
         $("html, body").animate({ scrollTop: 0 }, 600);
@@ -118,7 +166,15 @@ if ($('#dos1').length) {
 // $('.img-src3_text').css({left: -1000, visibility: 'visible'}).animate({
 //     left: 0
 // });
-
+$(function () {
+      $("#slider3").responsiveSlides({
+        auto: false,
+        pager: true,
+        manualControls: "",
+        speed: 300,
+        maxwidth: 960
+      }); 
+});
 $(function () {
       $("#slider2").responsiveSlides({
         auto: true,

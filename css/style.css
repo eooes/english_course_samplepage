@@ -426,7 +426,7 @@ ul.menu li:hover{
 }
 #section1_3 img {
   border-radius: 50%;
-  border: 10px solid #a37194;
+  border: 10px solid #fff600;
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
@@ -441,7 +441,7 @@ ul.menu li:hover{
   -ms-transform: scale(1.1,1.1); 
   -webkit-transform: scale(1.1,1.1); 
   transform: scale(1.1,1.1);
-  border: 10px solid #8acfc6;
+  border: 10px solid #ff6000;
 }
 
 
@@ -569,7 +569,7 @@ ul.menu li:hover{
 
 /* #play
 ================================================== */
-.play {padding-top: 30px;}
+.play {padding-top: 30px; background: url(../images/contentbg.jpg);}
 .play div {
     display:inline-block;
 }
@@ -584,9 +584,57 @@ ul.menu li:hover{
     background: yellow;
 }
 
+
+
 .play embed{
 height: 720px;
 width: 960px;
+}
+
+.learn {padding-top: 30px;background: url(../images/contentbg.jpg);}
+.learn div {
+    display:inline-block;
+}
+.learn div#xlink1, .learn div#xlink2, .learn div#xlink3, .learn div#xlink4    {
+    cursor:pointer;
+    padding:10px 30px;
+    background: yellow;
+}
+.learn div#xcontainer , .learn div#xcontainer1, .learn div#xcontainer2, .learn div#xcontainer3, .learn div#xcontainer4 {
+    width:100%;
+    height:100px;
+    background: yellow;
+}
+.learn div#xcontainer{
+  text-align: center;
+  padding-top: 60px;
+  font-size: 30px;
+  color:#616161;
+}
+
+.learn embed{
+height: 720px;
+width: 960px;
+}
+.download {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  background: url(../images/pattern2.jpg);
+  text-transform: uppercase;
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+  width: 500px;
+}
+.download a{
+  color: yellow !important;
+  text-decoration: none;
+}
+.download a:hover{
+  color: #eaeaea !important;
+  font-size: 110%;
 }
 
 /* #section3
